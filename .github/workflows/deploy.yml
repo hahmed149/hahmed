@@ -26,11 +26,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      # Set up the base URL for GitHub Pages
-      - name: Set up base URL
-        run: echo "PUBLIC_URL=/$(basename $GITHUB_REPOSITORY)" >> $GITHUB_ENV
-
       - name: Build project
         run: npm run build
 
